@@ -49,5 +49,7 @@ marca (String)
 
 ano (Integer)
 
+cor (String)
+
 
 
