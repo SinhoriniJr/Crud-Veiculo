@@ -1,0 +1,19 @@
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .butaoAcao {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .butaoAcao:hover {
+    background-color: #555;
+  }

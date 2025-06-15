@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #333;
+    padding: 15px 30px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: end;
+        
+  }
+  .listV{
+    margin-right: 2rem;
+
+  }
+  .nav{
+    display: flex;
+    margin-top: 1rem;
+    text-align: end;
+  }
+
+  

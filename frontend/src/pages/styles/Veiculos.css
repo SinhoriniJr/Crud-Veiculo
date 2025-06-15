@@ -1,22 +1,52 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  background-color: #ccc;
+}
+
+.veiculos-container {
+  max-width: 800px;
+  margin: 80px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.veiculos-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.veiculos-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.veiculos-container td{
+  padding: 0.5rem;
+}
+
+.veiculos-container th,
+.veiculos-container td {
+ 
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.veiculos-container th {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+}
+
+.veiculos-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+.lista{
+  display: flex;
+  flex-direction: row;
+}

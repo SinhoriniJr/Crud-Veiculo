@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../services/api';
 import './styles/Veiculos.css';
+import './styles/ButaoAcao.css';
 
 export default function Veiculos() {
   const [veiculos, setVeiculos] = useState([]);
@@ -21,17 +22,35 @@ export default function Veiculos() {
   };
 
   return (
-    <div>
+    <div className='veiculos-container'>
       <h2>Lista de Veículos</h2>
-      <ul>
-        {veiculos.map(v => (
-          <li key={v.id}>
-            {v.modelo} - {v.marca} - {v.ano} - {v.cor}
-            <button onClick={() => deletar(v.id)}>Excluir</button>
-            <Link to={`/editar/${v.id}`}><button>Editar</button></Link>
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          {veiculos.map(v => (
+            <tr key={v.id}>
+              <td>{v.modelo}</td>
+              <td>{v.marca}</td>
+              <td>{v.ano}</td>
+              <td>{v.cor}</td>
+              <td className='botoes'>
+                <Link to={`/editar/${v.id}`}>
+                  <button className='butaoAcao'>Editar</button>
+                </Link>
+                <button className='butaoAcao' onClick={() => deletar(v.id)}>Excluir</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  );
+  )
 }
